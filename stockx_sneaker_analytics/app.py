@@ -33,7 +33,7 @@ app.layout = html.Div(
                 html.H1(children="Sneaker Analytics", className="header-title"),
                 html.P(
                     children="Analyze the behavior of sneaker prices"
-                    " and the number of sneaker sold on StockX in the US"
+                    " and the number of pairs sold on StockX in the US"
                     " between 2017 and 2019",
                     className="header-description",
                 ),
@@ -214,4 +214,4 @@ def update_charts(region, brand, size, start_date, end_date):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=False)
